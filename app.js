@@ -15,10 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-    res.send("home");
+    res.render("calculator");
 });
-
-
 
 app.all("*", (req, res, next) => {
     res.render("error");
