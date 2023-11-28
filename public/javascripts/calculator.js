@@ -43,8 +43,13 @@ let method = "Cleared";
 
 btnBackspace.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
+        if (calDisplay.textContent === "Cleared") {
+            calDisplay.textContent = "";
+        }
+        else {
         const size = calDisplay.textContent.length;
         calDisplay.textContent = calDisplay.textContent.slice(0, (size - 1));
+        }
     }
 });
 
@@ -125,11 +130,16 @@ btnOffOn.addEventListener("click", () => {
 
 btnClear.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
+        if (calDisplay.textContent === "Cleared") {
+            calDisplay.textContent = "";
+        }
+        else {
         x = 0;
         y = 0;
         result = 0;
         method = "cleared";
         calDisplay.textContent = "Cleared";
+        }
     }
 });
 
