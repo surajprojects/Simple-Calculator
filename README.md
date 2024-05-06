@@ -20,7 +20,7 @@ Welcome to the Simple Calculator project, created by Suraj! This project offers 
 
 ## Download
 
-You can download the Simple Calculator executable file for Windows from [MediaFire]https://www.mediafire.com/file/od6qcc49farb6vn/calculator+Setup+1.0.0.exe/file. Simply download and run the executable file to use the calculator on your Windows system.
+You can download the Simple Calculator executable file for Windows from [MediaFire](https://www.mediafire.com/file/od6qcc49farb6vn/calculator+Setup+1.0.0.exe/file). Simply download and run the executable file to use the calculator on your Windows system.
 
 ## Deployment
 
