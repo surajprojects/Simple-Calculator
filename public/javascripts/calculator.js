@@ -1,18 +1,18 @@
 function add(x, y) {
     return x + y;
-}
+};
 
 function sub(x, y) {
     return x - y;
-}
+};
 
 function mul(x, y) {
     return x * y;
-}
+};
 
 function div(x, y) {
     return x / y;
-}
+};
 
 const conDisplay = document.querySelector("#conDisplay");
 const calDisplay = document.querySelector("#calDisplay");
@@ -47,8 +47,8 @@ btnBackspace.addEventListener("click", () => {
             calDisplay.textContent = "";
         }
         else {
-        const size = calDisplay.textContent.length;
-        calDisplay.textContent = calDisplay.textContent.slice(0, (size - 1));
+            const size = calDisplay.textContent.length;
+            calDisplay.textContent = calDisplay.textContent.slice(0, (size - 1));
         }
     }
 });
@@ -134,169 +134,193 @@ btnClear.addEventListener("click", () => {
             calDisplay.textContent = "";
         }
         else {
-        x = 0;
-        y = 0;
-        result = 0;
-        method = "cleared";
-        calDisplay.textContent = "Cleared";
+            x = 0;
+            y = 0;
+            result = 0;
+            method = "cleared";
+            calDisplay.textContent = "Cleared";
         }
     }
 });
 
 btnZero.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
-        if (calDisplay.textContent === "Cleared") {
-            calDisplay.textContent = "";
-            calDisplay.textContent = calDisplay.textContent + 0;
+        if (calDisplay.textContent.length <= 14) {
+            if (calDisplay.textContent.length <= 14) {
+                if (calDisplay.textContent === "Cleared") {
+                    calDisplay.textContent = "";
+                    calDisplay.textContent = calDisplay.textContent + 0;
 
-        }
-        else {
-            calDisplay.textContent = calDisplay.textContent + 0;
+                }
+                else {
+                    calDisplay.textContent = calDisplay.textContent + 0;
 
+                }
+            }
         }
     }
 });
 
 btnOne.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
-        if (calDisplay.textContent === "Cleared") {
-            calDisplay.textContent = "";
-            calDisplay.textContent = calDisplay.textContent + 1;
+        if (calDisplay.textContent.length <= 14) {
+            if (calDisplay.textContent === "Cleared") {
+                calDisplay.textContent = "";
+                calDisplay.textContent = calDisplay.textContent + 1;
 
-        }
-        else {
-            calDisplay.textContent = calDisplay.textContent + 1;
+            }
+            else {
+                calDisplay.textContent = calDisplay.textContent + 1;
 
+            }
         }
     }
 });
 
 btnTwo.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
-        if (calDisplay.textContent === "Cleared") {
-            calDisplay.textContent = "";
-            calDisplay.textContent = calDisplay.textContent + 2;
+        if (calDisplay.textContent.length <= 14) {
+            if (calDisplay.textContent === "Cleared") {
+                calDisplay.textContent = "";
+                calDisplay.textContent = calDisplay.textContent + 2;
 
-        }
-        else {
-            calDisplay.textContent = calDisplay.textContent + 2;
+            }
+            else {
+                calDisplay.textContent = calDisplay.textContent + 2;
 
+            }
         }
     }
 });
 
 btnThree.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
-        if (calDisplay.textContent === "Cleared") {
-            calDisplay.textContent = "";
-            calDisplay.textContent = calDisplay.textContent + 3;
+        if (calDisplay.textContent.length <= 14) {
+            if (calDisplay.textContent === "Cleared") {
+                calDisplay.textContent = "";
+                calDisplay.textContent = calDisplay.textContent + 3;
 
-        }
-        else {
-            calDisplay.textContent = calDisplay.textContent + 3;
+            }
+            else {
+                calDisplay.textContent = calDisplay.textContent + 3;
 
+            }
         }
     }
 });
 
 btnFour.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
-        if (calDisplay.textContent === "Cleared") {
-            calDisplay.textContent = "";
-            calDisplay.textContent = calDisplay.textContent + 4;
+        if (calDisplay.textContent.length <= 14) {
+            if (calDisplay.textContent === "Cleared") {
+                calDisplay.textContent = "";
+                calDisplay.textContent = calDisplay.textContent + 4;
 
-        }
-        else {
-            calDisplay.textContent = calDisplay.textContent + 4;
+            }
+            else {
+                calDisplay.textContent = calDisplay.textContent + 4;
 
+            }
         }
     }
 });
 
 btnFive.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
-        if (calDisplay.textContent === "Cleared") {
-            calDisplay.textContent = "";
-            calDisplay.textContent = calDisplay.textContent + 5;
+        if (calDisplay.textContent.length <= 14) {
+            if (calDisplay.textContent === "Cleared") {
+                calDisplay.textContent = "";
+                calDisplay.textContent = calDisplay.textContent + 5;
 
-        }
-        else {
-            calDisplay.textContent = calDisplay.textContent + 5;
+            }
+            else {
+                calDisplay.textContent = calDisplay.textContent + 5;
 
+            }
         }
     }
 });
 
 btnSix.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
-        if (calDisplay.textContent === "Cleared") {
-            calDisplay.textContent = "";
-            calDisplay.textContent = calDisplay.textContent + 6;
+        if (calDisplay.textContent.length <= 14) {
+            if (calDisplay.textContent === "Cleared") {
+                calDisplay.textContent = "";
+                calDisplay.textContent = calDisplay.textContent + 6;
 
-        }
-        else {
-            calDisplay.textContent = calDisplay.textContent + 6;
+            }
+            else {
+                calDisplay.textContent = calDisplay.textContent + 6;
 
+            }
         }
     }
 });
 
 btnSeven.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
-        if (calDisplay.textContent === "Cleared") {
-            calDisplay.textContent = "";
-            calDisplay.textContent = calDisplay.textContent + 7;
+        if (calDisplay.textContent.length <= 14) {
+            if (calDisplay.textContent === "Cleared") {
+                calDisplay.textContent = "";
+                calDisplay.textContent = calDisplay.textContent + 7;
 
-        }
-        else {
-            calDisplay.textContent = calDisplay.textContent + 7;
+            }
+            else {
+                calDisplay.textContent = calDisplay.textContent + 7;
 
+            }
         }
     }
 });
 
 btnEight.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
-        if (calDisplay.textContent === "Cleared") {
-            calDisplay.textContent = "";
-            calDisplay.textContent = calDisplay.textContent + 8;
+        if (calDisplay.textContent.length <= 14) {
+            if (calDisplay.textContent === "Cleared") {
+                calDisplay.textContent = "";
+                calDisplay.textContent = calDisplay.textContent + 8;
 
-        }
-        else {
-            calDisplay.textContent = calDisplay.textContent + 8;
+            }
+            else {
+                calDisplay.textContent = calDisplay.textContent + 8;
 
+            }
         }
     }
 });
 
 btnNine.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
-        if (calDisplay.textContent === "Cleared") {
-            calDisplay.textContent = "";
-            calDisplay.textContent = calDisplay.textContent + 9;
+        if (calDisplay.textContent.length <= 14) {
+            if (calDisplay.textContent === "Cleared") {
+                calDisplay.textContent = "";
+                calDisplay.textContent = calDisplay.textContent + 9;
 
-        }
-        else {
-            calDisplay.textContent = calDisplay.textContent + 9;
+            }
+            else {
+                calDisplay.textContent = calDisplay.textContent + 9;
 
+            }
         }
     }
 });
 
 btnPoint.addEventListener("click", () => {
     if (btnOffOn.textContent === "ON") {
-        if (calDisplay.textContent === "Cleared") {
-            calDisplay.textContent = "";
-            calDisplay.textContent = calDisplay.textContent + ".";
+        if (calDisplay.textContent.length <= 14) {
+            if (calDisplay.textContent === "Cleared") {
+                calDisplay.textContent = "";
+                calDisplay.textContent = calDisplay.textContent + ".";
 
-        }
-        else if (calDisplay.textContent.includes(".")) {
-            calDisplay.textContent = calDisplay.textContent;
+            }
+            else if (calDisplay.textContent.includes(".")) {
+                calDisplay.textContent = calDisplay.textContent;
 
-        }
-        else {
-            calDisplay.textContent = calDisplay.textContent + ".";
+            }
+            else {
+                calDisplay.textContent = calDisplay.textContent + ".";
 
+            }
         }
     }
 });
